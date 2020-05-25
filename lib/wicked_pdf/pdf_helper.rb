@@ -26,13 +26,13 @@ class WickedPdf
       end
     end
 
-    def render(options = nil, *args, &block)
-      render_with_wicked_pdf(options, *args, &block)
-    end
+    # def render(options = nil, *args, &block)
+    #   render_with_wicked_pdf(options, *args, &block)
+    # end
 
-    def render_to_string(options = nil, *args, &block)
-      render_to_string_with_wicked_pdf(options, *args, &block)
-    end
+    # def render_to_string(options = nil, *args, &block)
+    #   render_to_string_with_wicked_pdf(options, *args, &block)
+    # end
 
     def render_with_wicked_pdf(options = nil, *args, &block)
       if options.is_a?(Hash) && options.key?(:pdf)
